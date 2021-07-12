@@ -1,12 +1,11 @@
-def stoi(s : str):
+def stoi(s):
     return int(s[0:2])*3600+int(s[3:5])*60+int(s[6:8])
-
-def numzfill(x:int):
+def numzfill(x):
     if x<10:
         return '0'+str(x)
     return str(x)
 
-def itos(t : int):
+def itos(t):
     ret = numzfill(t//3600)+":"
     t%=3600
     ret+=numzfill(t//60)+":"
