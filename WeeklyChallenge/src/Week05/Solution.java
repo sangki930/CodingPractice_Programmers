@@ -1,5 +1,6 @@
 package Week05;
 
+
 class Solution {
     public int solution(String word) {
         int answer = 0, per = 3905;
