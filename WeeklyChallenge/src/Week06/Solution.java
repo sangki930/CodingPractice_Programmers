@@ -4,7 +4,7 @@ import java.util.*;
 
 class Boxer{
     int id;
-    int weight;
+    int weight;//복서의 체중
     int v;// 자기보다 무거운 복서를 이긴 횟수
     int plays;//경기 횟수
     int victory;// 이긴 횟수
