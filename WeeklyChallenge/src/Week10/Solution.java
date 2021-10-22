@@ -16,7 +16,7 @@ class Solution {
                 double xTmp = ((b*f-e*d))/(double)(a*d-b*c), yTmp=((e*c-a*f))/(double)(a*d-b*c);
                 if(xTmp!=(long)xTmp || yTmp!=(long)yTmp) continue;
                 long x = (long)xTmp, y=(long)yTmp;
-                // System.out.println(x+", "+y);
+                // System.out.println(x+", "+y)
                 list.offer(new long[]{x,y});
                 xMax = Math.max(xMax,(int)x);
                 xMin = Math.min(xMin,(int)x);
