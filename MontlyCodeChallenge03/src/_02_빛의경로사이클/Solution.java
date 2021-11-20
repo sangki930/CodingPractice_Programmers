@@ -2,6 +2,7 @@ package _02_빛의경로사이클;
 
 import java.util.LinkedList;
 
+
 class Solution {
     //https://prgms.tistory.com/101
     int r,c;
