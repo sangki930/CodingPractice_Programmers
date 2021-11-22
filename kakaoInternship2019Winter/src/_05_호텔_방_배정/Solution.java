@@ -9,6 +9,7 @@ public class Solution {
     public long[] solution(long k, long[] room_number) {
         int N = room_number.length;
         long[] answer = new long[N]; 
+        
         Map<Long,Long> hm = new HashMap<>();
         
         for(int i=0;i<N;++i){
