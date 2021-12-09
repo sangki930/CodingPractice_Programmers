@@ -15,7 +15,7 @@ class Solution {
             graph.put(a,arr1);
             graph.put(b,arr2);
         }
-        // System.out.println(graph);
+        
         LinkedList<Integer> queue = new LinkedList<>();
         queue.offer(1);
         int dis[]=new int[n+1];
