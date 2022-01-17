@@ -7,8 +7,6 @@ class Solution {
         int[] answer = {};
         Map<String,HashSet<String>> map = new HashMap<>(); //key : 신고당한 자, value : 신고한 사람들
         Map<String,HashSet<String>> map2 = new HashMap<>(); //key : 신고한 자, value : 신고당한 사람들
-        Map<String,Integer> counter = new HashMap<>();
-
         for(String r : report){
             String[] input = r.split(" ");
             String a = input[0], b = input[1]; // a : 신고한 자, b : 신고당한 자
