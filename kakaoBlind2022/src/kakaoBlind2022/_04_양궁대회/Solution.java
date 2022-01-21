@@ -23,6 +23,7 @@ class Solution {
         this.n=n;
 
         func(this.n,0,0,new StringBuilder("00000000000"));
+        StringBuilder sb  =new StringBuilder();
         
         if(list.isEmpty()) return new int[]{-1};
         Collections.sort(list,(a,b)->{
