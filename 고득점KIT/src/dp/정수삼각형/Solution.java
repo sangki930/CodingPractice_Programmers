@@ -1,6 +1,5 @@
 package dp.Á¤¼ö»ï°¢Çü;
 
-import java.util.*;
 class Solution {
    
     public int solution(int[][] triangle) {
