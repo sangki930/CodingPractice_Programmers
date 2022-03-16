@@ -75,7 +75,7 @@ class Solution {
         for(int i=0;i<2;i++)
             Arrays.fill(disArr[i],Integer.MAX_VALUE);
         disArr[0][start] = 0;
-        System.out.println(map);
+        
         while(!pq.isEmpty()){
             Data data = pq.poll();
             String p = data.node;
