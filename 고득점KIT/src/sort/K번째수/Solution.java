@@ -21,7 +21,6 @@ class Solution {
             arrnum[index] = array[a];
             index++;
         }
-        
         Arrays.sort(arrnum);
         return arrnum[k-1];
     }
