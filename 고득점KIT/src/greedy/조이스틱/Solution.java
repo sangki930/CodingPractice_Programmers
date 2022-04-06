@@ -1,5 +1,6 @@
 package greedy.¡∂¿ÃΩ∫∆Ω;
 
+// ¡∂¿ÃΩ∫∆Ω Lv.2
 class Solution {
     public int solution(String name) {
         int answer = 0;
