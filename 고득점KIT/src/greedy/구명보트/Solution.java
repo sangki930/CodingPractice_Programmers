@@ -2,6 +2,7 @@ package greedy.구명보트;
 
 import java.util.*;
 
+// 구명보트
 class Solution {
     public static int solution(int[] people, int limit) {
         Arrays.sort(people);
