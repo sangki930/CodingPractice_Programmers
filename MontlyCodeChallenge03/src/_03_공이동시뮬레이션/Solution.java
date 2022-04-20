@@ -14,14 +14,14 @@ class Solution {
             int dir = queries[i][0];
             long dx = queries[i][1];
             boolean flag = move(dir,dx);
-            // System.out.println("move");
+            
             if(!flag) return 0L;
-            // System.out.println(Arrays.toString(xRange)+", "+Arrays.toString(yRange));
+            
         }
         return (xRange[1]-xRange[0]+1L)*(yRange[1]-yRange[0]+1L);
     }
     public boolean move(int dir,long dx){
-        // System.out.println(dir);
+        
         switch(dir){
             case 0->{
                 if(xRange[0]==0)
