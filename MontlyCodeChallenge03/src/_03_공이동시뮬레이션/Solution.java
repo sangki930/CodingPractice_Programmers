@@ -20,8 +20,7 @@ class Solution {
         }
         return (xRange[1]-xRange[0]+1L)*(yRange[1]-yRange[0]+1L);
     }
-    public boolean move(int dir,long dx){
-        
+    public boolean move(int dir,long dx){  
         switch(dir){
             case 0->{
                 if(xRange[0]==0)
