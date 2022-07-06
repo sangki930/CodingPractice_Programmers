@@ -2,6 +2,7 @@ package 줄서는방법;
 
 import java.util.*;
 
+// 프로그래머스 줄서는 방법
 class Solution {
     public int[] solution(int n, long k) {
         int[] answer = new int[n];
