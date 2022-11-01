@@ -1,4 +1,4 @@
-package kakaoBlind2020._01_¹®ÀÚ¿­¾ĞÃà;
+package kakaoBlind2020._01_ë¬¸ìì—´ì••ì¶•;
 
 class Solution {
     public static int solution(String s) {
@@ -6,15 +6,15 @@ class Solution {
         int len = s.length();
         int answer = len;
         
-        for(int i=1;i<=len/2;i++){//ÂÉ°¶ °³¼ö Á¤ÇÏ±â
-            String unit = s.substring(0,i);//Ã¹ ´ÜÀ§
-            int cnt=0;//´ÜÀ§ º° Ä«¿îÆ®
+        for(int i=1;i<=len/2;i++){//ìª¼ê°¤ ê°œìˆ˜ ì •í•˜ê¸°
+            String unit = s.substring(0,i);//ì²« ë‹¨ìœ„
+            int cnt=0;//ë‹¨ìœ„ ë³„ ì¹´ìš´íŠ¸
             String result="";
             
             for(int j=0;j<=len;j=j+i){
             	
-//                System.out.println("È®ÀÎ : "+unit);
-//                System.out.println("È®ÀÎ : "+j);
+//                System.out.println("í™•ì¸ : "+unit);
+//                System.out.println("í™•ì¸ : "+j);
                 if(s.indexOf(unit,j)==j){
                     cnt++;
                     
