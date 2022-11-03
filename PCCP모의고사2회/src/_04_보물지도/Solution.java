@@ -41,6 +41,7 @@ class Solution {
         for(int k=0;k<2;k++)
             dp[k][0][0] = 0;
         
+        // BFS + DP
         while(!queue.isEmpty()){
             Point point = queue.poll();
             
