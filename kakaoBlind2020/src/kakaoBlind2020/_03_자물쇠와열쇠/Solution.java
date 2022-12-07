@@ -1,4 +1,4 @@
-package kakaoBlind2020._03_ÀÚ¹°¼è¿Í¿­¼è;
+package kakaoBlind2020._03_ìë¬¼ì‡ ì™€ì—´ì‡ ;
 
 class Solution {
 

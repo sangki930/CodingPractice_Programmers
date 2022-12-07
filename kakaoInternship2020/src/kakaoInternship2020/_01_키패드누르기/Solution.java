@@ -1,4 +1,4 @@
-package kakaoInternship2020._01_Å°ÆÐµå´©¸£±â;
+package kakaoInternship2020._01_í‚¤íŒ¨ë“œëˆ„ë¥´ê¸°;
 
 class Solution {
     public String solution(int[] numbers, String hand) {

@@ -1,4 +1,4 @@
-package ¸ÖÂÄÇÑ_»ç°¢Çü;
+package ë©€ì©¡í•œ_ì‚¬ê°í˜•;
 
 public class Solution {
 	public long solution(int w,int h) {
