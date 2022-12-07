@@ -1,4 +1,4 @@
-package _03_°øÀÌµ¿½Ã¹Ä·¹ÀÌ¼Ç;
+package _07_ê³µì´ë™ì‹œë®¬ë ˆì´ì…˜;
 
 class Solution {
     int x,y,n,m;
@@ -7,7 +7,7 @@ class Solution {
         long answer = -1;
         if(n==0 || m==0) return 0L;
         this.x=x;this.y=y;this.n=n;this.m=m;
-        // 0 : ÁÂ, 1: ¿ì, 2 : »ó, 3: ÇÏ
+        // 0 : ï¿½ï¿½, 1: ï¿½ï¿½, 2 : ï¿½ï¿½, 3: ï¿½ï¿½
         xRange = new long[]{x,x};yRange = new long[]{y,y};
         
         for(int i=queries.length-1;i>=0;i--){

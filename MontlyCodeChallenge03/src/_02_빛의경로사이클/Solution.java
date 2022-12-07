@@ -1,4 +1,4 @@
-package _02_ºûÀÇ°æ·Î»çÀÌÅ¬;
+package _02_ë¹›ì˜ê²½ë¡œì‚¬ì´í´;
 
 import java.util.LinkedList;
 

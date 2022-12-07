@@ -1,4 +1,4 @@
-package _01_¾ø´Â¼ıÀÚ´õÇÏ±â;
+package _01_ì—†ëŠ”ìˆ«ìë”í•˜ê¸°;
 
 public class Solution {
 	public int solution(int[] numbers) {
