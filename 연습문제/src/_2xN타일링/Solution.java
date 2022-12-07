@@ -1,6 +1,4 @@
-package _2xNŸ�ϸ�;
-
-import java.util.*;
+package _2xN타일링;
 
 class Solution {
     

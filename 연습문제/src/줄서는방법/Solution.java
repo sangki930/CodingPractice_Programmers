@@ -1,8 +1,6 @@
-package ÁÙ¼­´Â¹æ¹ý;
+package ì¤„ì„œëŠ”ë°©ë²•;
 
 import java.util.*;
-
-// ÇÁ·Î±×·¡¸Ó½º ÁÙ¼­´Â ¹æ¹ý
 class Solution {
     public int[] solution(int n, long k) {
         int[] answer = new int[n];
