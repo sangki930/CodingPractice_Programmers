@@ -1,12 +1,12 @@
-package _04_¹Ì·Î_Å»Ãâ;
+package _04_ë¯¸ë¡œ_íƒˆì¶œ;
 
 import java.util.*;
 
 class Data{
     String node;
     int dist;
-    boolean[] onTrap; // Æ®·¦À» ¹â¾Ò´Â Áö(ºñÆ®)
-    // int pre; // v : µµ·Î¿¡ ±âÀçµÇ¾î ÀÖ´Â ºñ¿ë
+    boolean[] onTrap; // Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò´ï¿½ ï¿½ï¿½(ï¿½ï¿½Æ®)
+    // int pre; // v : ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½
     public Data(String node, int dist, boolean[] onTrap){
         this.dist=dist;
         this.node=node;

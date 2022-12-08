@@ -1,4 +1,4 @@
-package _03_Ç¥ÆíÁý;
+package _03_í‘œíŽ¸ì§‘;
 
 import java.util.*;
 
@@ -95,13 +95,13 @@ class Solution {
             }
         }
         
-        // StringBuilder sb =  new StringBuilder();
-        // for(int i=0;i<nodes.length;i++){
-        //     if(nodes[i]==null)
-        //         sb.append("X");
-        //     else
-        //         sb.append("O");
-        // }
+        StringBuilder sb =  new StringBuilder();
+        for(int i=0;i<nodes.length;i++){
+            if(nodes[i]==null)
+                sb.append("X");
+            else
+                sb.append("O");
+        }
         
         // return sb.toString();
         return new String(is);

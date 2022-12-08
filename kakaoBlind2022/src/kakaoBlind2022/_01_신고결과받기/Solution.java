@@ -1,15 +1,17 @@
-package kakaoBlind2022._01_½Å°í°á°ú¹Ş±â;
+package kakaoBlind2022._01_ì‹ ê³ ê²°ê³¼ë°›ê¸°;
 
 import java.util.*;
 
 class Solution {
     public int[] solution(String[] id_list, String[] report, int k) {
         int[] answer = {};
-        Map<String,HashSet<String>> map = new HashMap<>(); //key : ½Å°í´çÇÑ ÀÚ, value : ½Å°íÇÑ »ç¶÷µé
-        Map<String,HashSet<String>> map2 = new HashMap<>(); //key : ½Å°íÇÑ ÀÚ, value : ½Å°í´çÇÑ »ç¶÷µé
+        Map<String,HashSet<String>> map = new HashMap<>(); //key : ì‹ ê³ ë‹¹í•œ ì, value : ì‹ ê³ í•œ ì‚¬ëŒë“¤
+        Map<String,HashSet<String>> map2 = new HashMap<>(); //key : ì‹ ê³ í•œ ì, value : ì‹ ê³ ë‹¹í•œ ì‚¬ëŒë“¤
+        Map<String,Integer> counter = new HashMap<>();
+
         for(String r : report){
             String[] input = r.split(" ");
-            String a = input[0], b = input[1]; // a : ½Å°íÇÑ ÀÚ, b : ½Å°í´çÇÑ ÀÚ
+            String a = input[0], b = input[1]; // a : ì‹ ê³ í•œ ì, b : ì‹ ê³ ë‹¹í•œ ì
             HashSet<String> set = map.getOrDefault(b,new HashSet<>());
             set.add(a);
             map.put(b,set);
@@ -28,7 +30,7 @@ class Solution {
             }
             answer[i]=cnt;
         }
-        //
+
         return answer;
     }
 }

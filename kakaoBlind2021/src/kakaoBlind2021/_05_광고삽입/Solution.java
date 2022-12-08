@@ -1,4 +1,4 @@
-package kakaoBlind2021._05_±¤°í»ðÀÔ;
+package kakaoBlind2021._05_ê´‘ê³ ì‚½ìž…;
 
 import java.util.*;
 
@@ -22,7 +22,7 @@ public class Solution {
     
     public String solution(String play_time, String adv_time, String[] logs) {
         int pt = s2i(play_time), at = s2i(adv_time);
-        // A. Æ¯Á¤ ÃÊ¿¡ ½ÃÃ»ÁßÀÎ »ç¶÷ÀÇ ¼ö °è»ê
+        // A. Æ¯ï¿½ï¿½ ï¿½Ê¿ï¿½ ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½
         int d[] = new int[360001];
         for(int i = 0; i < logs.length; i++){
             String l = logs[i];
@@ -30,7 +30,7 @@ public class Solution {
             d[st]++; d[en]--;
         }
         for(int i = 1; i <= 360000; i++) d[i] += d[i-1];
-        // B. ´©Àû Àç»ý½Ã°£ÀÌ °¡Àå ¸¹Àº °÷ °è»ê
+        // B. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½
         long mxval = 0, curval = 0;
         int mxtime = 0;
         for(int i = 0; i < at; i++) curval += d[i];

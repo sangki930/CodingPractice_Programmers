@@ -1,4 +1,4 @@
-package _02_¾à¼öÀÇ_°³¼ö¿Í_µ¡¼À;
+package _02_ì•½ìˆ˜ì˜_ê°œìˆ˜ì™€_ë§ì…ˆ;
 
 public class Solution {
     public int solution(int left, int right) {

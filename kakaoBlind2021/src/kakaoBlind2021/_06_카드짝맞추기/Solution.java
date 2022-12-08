@@ -1,4 +1,4 @@
-package kakaoBlind2021._06_Ä«µåÂ¦¸ÂÃß±â;
+package kakaoBlind2021._06_ì¹´ë“œì§ë§ì¶”ê¸°;
 
 import java.util.*;
 
@@ -50,7 +50,7 @@ class Solution {
     
     // BFS
     static int dist(int[][] board, Point s, Point e){
-        //s : ½ÃÀÛÁ¡, e : ³¡Á¡
+        //s : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, e : ï¿½ï¿½ï¿½ï¿½
         
         int d[][]=new int[4][4];
         for(int i=0;i<4;i++)
@@ -64,7 +64,7 @@ class Solution {
             for(int i=0;i<4;i++){
                 
                 int dis=0;
-                //ÇØ´ç ¹æÇâÀ¸·Î ÁøÇàÇÒ ¶§ Ä«µå È¤Àº ¸¶Áö¸· Ä­±îÁöÀÇ °Å¸®
+                //ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ä«ï¿½ï¿½ È¤ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ä­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½
                 
                 while(true){
                     int nx = cur.x+dx[i]*dis;
@@ -97,7 +97,7 @@ class Solution {
     
     static void solve(int idx){
         if(idx == n){ 
-            // p[0], p[1], ... , p[n-1]¿¡ permutationÀ» Ã¤¿ò
+            // p[0], p[1], ... , p[n-1]ï¿½ï¿½ permutationï¿½ï¿½ Ã¤ï¿½ï¿½
             int myboard[][] = new int[4][4];
             for(int i = 0; i < 4; i++)
                 for(int j = 0; j < 4; j++)

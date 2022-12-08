@@ -1,4 +1,4 @@
-package kakaoBlind2021._01_¾ÆÀÌµğÃßÃµ;
+package kakaoBlind2021._01_ì•„ì´ë””ì¶”ì²œ;
 
 public class Solution {
     public String solution(String new_id) {

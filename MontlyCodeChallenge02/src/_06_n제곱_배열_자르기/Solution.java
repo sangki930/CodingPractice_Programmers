@@ -1,4 +1,4 @@
-package _06_nÁ¦°ö_¹è¿­_ÀÚ¸£±â;
+package _06_nì œê³±_ë°°ì—´_ìë¥´ê¸°;
 
 class Solution {
     public int[] solution(int n, long left, long right) {

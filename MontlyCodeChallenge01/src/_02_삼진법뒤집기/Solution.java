@@ -1,4 +1,4 @@
-package _02_»ïÁø¹ıµÚÁı±â;
+package _02_ì‚¼ì§„ë²•ë’¤ì§‘ê¸°;
 
 public class Solution {
     public int solution(int n) {

@@ -1,4 +1,4 @@
-package kakaoBlind2022._02_kÁø¼ö¿¡¼­_¼Ò¼ö_°³¼ö_±¸ÇÏ±â;
+package kakaoBlind2022._02_kì§„ìˆ˜ì—ì„œ_ì†Œìˆ˜_ê°œìˆ˜_êµ¬í•˜ê¸°;
 
 class Solution {
     public int solution(int n, int k) {

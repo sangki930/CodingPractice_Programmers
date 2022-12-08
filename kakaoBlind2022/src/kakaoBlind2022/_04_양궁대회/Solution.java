@@ -1,4 +1,4 @@
-package kakaoBlind2022._04_��ô�ȸ;
+package kakaoBlind2022._04_양궁대회;
 
 import java.util.*;
 

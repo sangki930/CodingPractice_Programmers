@@ -1,4 +1,4 @@
-package kakaoBlind2021._04_гу╫бец╫ц©Д╠щ;
+package kakaoBlind2021._04_М∙╘Л┼╧М┐²Л▀°Л ■Й╦┬;
 
 import java.util.*;
 public class Solution {
