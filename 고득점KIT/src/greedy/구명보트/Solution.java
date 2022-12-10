@@ -1,8 +1,8 @@
-package greedy.±¸¸íº¸Æ®;
+package greedy.êµ¬ëª…ë³´íŠ¸;
 
 import java.util.*;
 
-// ±¸¸íº¸Æ®
+// ï¿½ï¿½ï¿½ï¿½Æ®
 class Solution {
     public static int solution(int[] people, int limit) {
         Arrays.sort(people);
