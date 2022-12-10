@@ -1,57 +1,22 @@
-package hash.¿ÏÁÖÇÏÁö_¸øÇÑ_¼±¼ö;
+package hash.ì™„ì£¼í•˜ì§€_ëª»í•œ_ì„ ìˆ˜;
 
 import java.util.*;
 
-class Data{
-    int no;
-    long time;
-    long accTime;
-    long fee;
-    public Data(int no,long time, long fee){
-        this.no=no;
-        this.time=time;
-        this.fee=fee;
-        this.accTime=0L;
-    }
-}
-
 class Solution {
-    public int[] solution(int[] fees, String[] records) {
-        int[] answer = {};
-        // fees[0] : ±âº»½Ã°£, fees[1] : ±âº»¿ä±Ý, fees[2] : ´ÜÀ§½Ã°£, fees[3] : ´ÜÀ§¿ä±Ý
-        Map<Integer,Data> map = new TreeMap<>();
-        
-        for(String rec : records){
-            String[] input = rec.split(" ");
-            long time = convert(input[0]);
-            int no = Integer.parseInt(input[1]);
-            switch(input[2]){
-                case "IN"->{
-                    Data data = map.getOrDefault(no,new Data(no,time,0));
-                    if(data.time!=0) data.time=time;
-                    map.put(no,data);
-                }
-                case "OUT"->{
-                    Data data = map.getOrDefault(no,new Data(no,time,0));
-                    data.accTime+=(time-data.time);
-                    data.time=-1L;
-                    map.put(no,data);
-                }
+    public String solution(String[] participant, String[] completion) {
+        String answer = "";
+   
+        HashMap<String, Integer> hm = new HashMap<>();
+        for (String player : participant) hm.put(player, hm.getOrDefault(player, 0) + 1);
+        for (String player : completion) hm.put(player, hm.get(player) - 1);
+
+        for (String key : hm.keySet()) {
+            if (hm.get(key) != 0){
+                answer = key;
             }
         }
-        answer = new int[map.size()];
-        int idx=0;
-        for(Data data : map.values()){
-            if(data.time!=-1L){
-                data.accTime += (convert("23:59")-data.time);
-            }   
-            answer[idx++] = (int)Math.max(fees[1], fees[1]+Math.ceil((data.accTime-fees[0])/(double)fees[2])*fees[3]);
-        }
         return answer;
+      
     }
-    // 00:00-> Àý´ë½Ã°£À¸·Î ¹Ù²Þ
-    public long convert(String s){
-        String[] input = s.split(":");
-        return Long.parseLong(input[0])*60+Long.parseLong(input[1]);
-    }
+    
 }
