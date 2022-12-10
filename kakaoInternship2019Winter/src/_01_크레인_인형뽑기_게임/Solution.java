@@ -1,7 +1,7 @@
-package _01_Å©·¹ÀÎ_ÀÎÇü»Ì±â_°ÔÀÓ;
+package _01_í¬ë ˆì¸_ì¸í˜•ë½‘ê¸°_ê²Œì„;
 
 import java.util.*;
-//
+
 class Solution {
     public int solution(int[][] board, int[] moves) {
         int answer = 0;

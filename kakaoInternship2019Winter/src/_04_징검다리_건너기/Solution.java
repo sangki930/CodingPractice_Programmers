@@ -1,4 +1,4 @@
-package _04_¡�˴ٸ�_�ǳʱ�;
+package _04_징검다리_건너기;
 
 public class Solution {
     public int solution(int[] stones, int k) {
