@@ -1,9 +1,10 @@
-package dp.Á¤¼ö»ï°¢Çü;
+package dp.ì •ìˆ˜ì‚¼ê°í˜•;
+
 
 class Solution {
    
     public int solution(int[][] triangle) {
-          // 1. ±âº»°ª ÃÊ±âÈ­  //
+          // 1. ï¿½âº»ï¿½ï¿½ ï¿½Ê±ï¿½È­  //
    int[][] dp = new int[triangle.length][triangle.length];
      dp[0][0] = triangle[0][0];
      for(int i = 1; i < triangle.length; i++) {

@@ -1,4 +1,4 @@
-package _03_ºÒ·®»ç¿ëÀÚ;
+package _03_ë¶ˆëŸ‰ì‚¬ìš©ì;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,11 +29,11 @@ class Solution {
             set.addAll(list);
 
             boolean flag = true;
-            // °°Àº ¾ÆÀÌµğ·Î ÀÌ·ç¾îÁø Á¶ÇÕÀÖ´ÂÁö Ã¼Å©
+            // ê°™ì€ ì•„ì´ë””ë¡œ ì´ë£¨ì–´ì§„ ì¡°í•©ìˆëŠ”ì§€ ì²´í¬
             for(HashSet str : result) {
                 if(str.containsAll(list)) flag = false;
             }
-            if(flag) result.add(set); // ¾ø´Â °æ¿ì
+            if(flag) result.add(set); // ì—†ëŠ” ê²½ìš°
 
             return;
         }
@@ -41,7 +41,7 @@ class Solution {
         for(int i = 0 ; i < user_id.length; i++) {
             Matcher matcher = idPattern.matcher(user_id[i]);
 
-            //Á¤±Ô½Ä Ç¥Çö¿¡ ¸Â´Â ¹®ÀÚ
+            //ì •ê·œì‹ í‘œí˜„ì— ë§ëŠ” ë¬¸ì
             if(matcher.matches() && !visit[i]) {
                 list.add(user_id[i]);
                 
