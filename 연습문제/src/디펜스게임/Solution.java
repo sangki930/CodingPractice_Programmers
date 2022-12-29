@@ -2,6 +2,7 @@ package 디펜스게임;
 
 import java.util.*;
 
+// Level02
 class Solution {
     public int solution(int n, int k, int[] enemy) {
         int answer = enemy.length;
