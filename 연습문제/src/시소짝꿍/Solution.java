@@ -1,7 +1,8 @@
 package 시소짝꿍;
 
-import java.util.*;
-import java.util.stream.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 class Solution {
     public long solution(int[] weights) {
