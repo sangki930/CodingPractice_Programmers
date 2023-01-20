@@ -8,7 +8,6 @@ class Solution {
         int[] test = new int[e+2];
         test[e+1] = e+1;
         int p = func(e);
-        int cnt = 0;
         for(int i=e;i>=1;i--){
             int v = func(i);
             // System.out.println(v);
