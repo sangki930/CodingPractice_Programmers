@@ -1,4 +1,4 @@
-package kakaoBlind2022._06_미로탈출명령어;
+package kakaoBlind2023._06_미로탈출명령어;
 
 class Data{
     int x,y;
