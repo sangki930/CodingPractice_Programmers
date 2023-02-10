@@ -1,4 +1,4 @@
-package kakaoBlind2022._07_사라지는발판;
+package kakaoBlind2023._07_123떨어뜨리기;
 
 class Result{
         boolean win;
