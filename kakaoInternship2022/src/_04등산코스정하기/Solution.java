@@ -1,4 +1,4 @@
-package _03등산코스정하기;
+package _04등산코스정하기;
 
 import java.util.*;
 
