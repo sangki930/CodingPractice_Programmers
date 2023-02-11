@@ -44,7 +44,6 @@ public class Solution {
             if(dp[k][0]>dp[k][1])
                 flag=true;
         }
-       
         dp[i][1] = sales[i-1]+sum_child[i];
         if(flag){
             dp[i][0] = sum_child[i];

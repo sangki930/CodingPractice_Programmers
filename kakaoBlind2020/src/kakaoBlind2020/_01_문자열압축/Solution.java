@@ -12,9 +12,7 @@ class Solution {
             String result="";
             
             for(int j=0;j<=len;j=j+i){
-            	
-//                System.out.println("확인 : "+unit);
-//                System.out.println("확인 : "+j);
+
                 if(s.indexOf(unit,j)==j){
                     cnt++;
                     
@@ -23,7 +21,7 @@ class Solution {
                    
                    if(cnt>=2){
                        result = result+cnt+unit;
-                   }else if(cnt<=1){
+                   }else{
                         result = result+unit;
                    }
                    
