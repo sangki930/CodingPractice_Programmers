@@ -1,4 +1,4 @@
-package 디펜스게임;
+package Level02.디펜스게임;
 
 import java.util.*;
 

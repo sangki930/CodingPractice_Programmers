@@ -1,4 +1,4 @@
-package 호텔대실;
+package Level02.호텔대실;
 
 class Solution {
     public int solution(String[][] book_time) {
