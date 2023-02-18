@@ -22,10 +22,7 @@ class Solution {
         List<Person> list = new ArrayList<>();
         List<Person> scorelist = new ArrayList<>();
         
-        TreeMap<Integer,ArrayList<Person>> scoremap
-            = new TreeMap<>(
-            (a,b)->b-a
-        );
+        TreeMap<Integer,ArrayList<Person>> scoremap = new TreeMap<>((a,b)->b-a);
         
         for(int i = 0;i < scores.length ; i++){
             int[] score = scores[i];
