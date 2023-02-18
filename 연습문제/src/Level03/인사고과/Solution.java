@@ -1,4 +1,4 @@
-package 인사고과;
+package Level03.인사고과;
 
 import java.util.*;
 

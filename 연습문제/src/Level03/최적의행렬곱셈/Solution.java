@@ -1,4 +1,4 @@
-package 최적의행렬곱셈;
+package Level03.최적의행렬곱셈;
 
 //ref : https://source-sc.tistory.com/24
 class Solution {
