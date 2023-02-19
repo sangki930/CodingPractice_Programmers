@@ -12,8 +12,7 @@ public class Solution {
         if(num<=5){
             return Long.bitCount(Integer.parseInt("11011".substring(0,(int)num),2));
         }
-        int base = 1;
-        while(Math.pow(5,base+1)<num) base++;
+        int base = (int)(Math.log(num)/Math.log(5));
 
         long section = num / (long)Math.pow(5,base);
         long remainder = num % (long)Math.pow(5,base);
