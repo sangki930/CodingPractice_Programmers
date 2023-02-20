@@ -1,4 +1,4 @@
-package 최고의집합;
+package Level03.최고의집합;
 
 class Solution {
     public int[] solution(int n, int s) {
