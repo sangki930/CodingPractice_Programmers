@@ -35,9 +35,7 @@ class Solution {
             if(answer[i]>=0){
                 answer[i] = cnt;
             }
-
         }
-
         return answer;
     }
 }
