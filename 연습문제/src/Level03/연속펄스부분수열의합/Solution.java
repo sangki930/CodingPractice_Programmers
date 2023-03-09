@@ -6,7 +6,6 @@ class Solution {
     public long solution(int[] sequence) {
         return Math.max(solution(sequence,1),solution(sequence,-1));
     }
-
     public long solution(int[] arr, int start){
         int n = arr.length;
         int[] tmp = new int[n];
