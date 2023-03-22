@@ -10,7 +10,7 @@ class Solution {
         for(int i=0;i<want.length;i++){
             indices.put(want[i],i);
         }
-        // System.out.println(indices);
+
         for(int i=0;i<=discount.length-10;i++){
             int[] tmp = new int[want.length];
             for(int j=i;j<i+10;j++){
