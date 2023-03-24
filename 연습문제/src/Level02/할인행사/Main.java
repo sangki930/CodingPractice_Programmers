@@ -16,7 +16,6 @@ class Solution {
             for(int j=i;j<i+10;j++){
                 int k = indices.getOrDefault(discount[j],-1);
                 if(k==-1){
-                    // System.out.println(discount[j]);
                     continue;
                 }
                 tmp[k]++;
