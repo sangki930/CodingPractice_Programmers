@@ -22,7 +22,6 @@ class Solution {
                     board_map[s[0]][s[1]].put(k,board_map[s[0]][s[1]].getOrDefault(k,0)+1);
                     continue;
                 }
-
                 int[] e = points[route[i+1]-1];
                 // 행 방향으로 이동
                 if(s[0]<=e[0]){
