@@ -47,7 +47,6 @@ class Solution {
                 }
             }
         }
-
         for(int i=0;i<=100;i++){
             for(int j=0;j<=100;j++){
                 Map<Integer,Integer> map = board_map[i][j];
