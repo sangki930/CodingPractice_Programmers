@@ -22,7 +22,6 @@ class Solution {
                 t = op_end_t;
             }
         }
-
         return longToTime(t);
     }
 
