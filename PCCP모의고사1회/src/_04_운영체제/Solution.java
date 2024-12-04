@@ -1,4 +1,4 @@
-package _04_¿î¿µÃ¼Á¦;
+package _04_ìš´ì˜ì²´ì œ;
 
 import java.util.PriorityQueue;
 
@@ -6,8 +6,8 @@ class Solution {
     static long[] answer = new long[11];
     
     public long[] solution(int[][] program) {
-        // [ÇÁ·Î±×·¥ Á¡¼ö(¿ì¼±¼øÀ§), È£Ãâ½Ã°¢, ½ÇÇà½Ã°£]
-        // ¿þÀÌÆ® ÈüÀº ¿ì¼±¼øÀ§ ¼ø¼­·Î ´ë±â½ÃÅµ´Ï´Ù.
+        // [ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ì¼±ï¿½ï¿½ï¿½ï¿½), È£ï¿½ï¿½Ã°ï¿½, ï¿½ï¿½ï¿½ï¿½Ã°ï¿½]
+        // ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ì¼±ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Åµï¿½Ï´ï¿½.
         PriorityQueue<int[]> waitHeap = new PriorityQueue<>((o1, o2) -> {
             if (o1[0] == o2[0]) {
                 return o1[1] - o2[1];
@@ -15,7 +15,7 @@ class Solution {
             return o1[0] - o2[0];
         });
         
-        // ½½¸³ ÈüÀº È£Ãâ½Ã°¢ ¼ø¼­·Î ´ë±â½ÃÅµ´Ï´Ù.
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Åµï¿½Ï´ï¿½.
         PriorityQueue<int[]> sleepHeap = new PriorityQueue<>((o1, o2) -> {
             return o1[1] - o2[1];
         });
@@ -33,35 +33,35 @@ class Solution {
         long time = -1;
         int run = 0;
         while (true) {
-            // ½½¸³Èü°ú ¿þÀÕÈüÀÌ µÑ ´Ù ºñ¾ú°í, ½ÇÇàÀÌ 0ÀÌ¶ó¸é ³¡³­ °Í ÀÔ´Ï´Ù.
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0ï¿½Ì¶ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ô´Ï´ï¿½.
             if (waitHeap.isEmpty() && sleepHeap.isEmpty() && run == 0) {
                 break;
             }
             time++;
-            // ½ÇÇà Áß ÀÌ¶ó¸é °¨¼Ò, Áï 0ÀÌ¶ó¸é ½ÇÇà Áß ¾Æ´Ô.
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ì¶ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ 0ï¿½Ì¶ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Æ´ï¿½.
             if (run > 0) {
                 run--;
             }
             
-            // È£Ãâ
-            // ½Ã°£ÀÌ °°´Ù¸é, ½½¸³ Èü¿¡¼­ ²¨³»¼­ ´ë±â¿­·Î ³Ö½À´Ï´Ù.
+            // È£ï¿½ï¿½
+            // ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½â¿­ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.
             while (!sleepHeap.isEmpty() && sleepHeap.peek()[1] == time) {
                 waitHeap.add(sleepHeap.poll());
             }
             
-            // ½ÇÇà
+            // ï¿½ï¿½ï¿½ï¿½
             if (run == 0 && !waitHeap.isEmpty()) {
                 int[] curProgram = waitHeap.poll();
-                // ½ÇÇà½Ã°£¿¡ Ãß°¡ÇÕ´Ï´Ù.
+                // ï¿½ï¿½ï¿½ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Õ´Ï´ï¿½.
                 run += curProgram[2];
-                // Á¤´ä¿¡´Â ½ÇÇàµÈ ½Ã°¢ - ´ë±â¿­¿¡ µé¾î°£ ½Ã°¢ÀÌ ±â·ÏµË´Ï´Ù.
-                // ÁÖÀÇÇÒ Á¡Àº ÇÁ·Î±×·¥ º°·Î ÀúÀåµÇ´Â°Ô ¾Æ´Ï¶ó ¿ì¼±¼øÀ§ º°·Î ±â·ÏµÈ´Ù´Â °Í ÀÔ´Ï´Ù.
-                // ex) ¿ì¼±¼øÀ§°¡ 1ÀÎ ÇÁ·Î±×·¥Àº answer[1]¿¡ ÀúÀåµÊ.
+                // ï¿½ï¿½ï¿½ä¿¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ - ï¿½ï¿½â¿­ï¿½ï¿½ ï¿½ï¿½î°£ ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½ÏµË´Ï´ï¿½.
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç´Â°ï¿½ ï¿½Æ´Ï¶ï¿½ ï¿½ì¼±ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ÏµÈ´Ù´ï¿½ ï¿½ï¿½ ï¿½Ô´Ï´ï¿½.
+                // ex) ï¿½ì¼±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ answer[1]ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½.
                 answer[curProgram[0]] += time - curProgram[1];
             }
         }
-        // 0¹ø¿¡´Â ÇÁ·Î±×·¥ÀÇ ÃÑ ½Ã°£ÀÌ µé¾î°©´Ï´Ù.
+        // 0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½î°©ï¿½Ï´ï¿½.
         answer[0] = time;
     }
 }
-//ÃâÃ³ : https://velog.io/@soluinoon/PCCP-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-1%ED%9A%8C-4%EB%B2%88-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9CJAVA
+//ï¿½ï¿½Ã³ : https://velog.io/@soluinoon/PCCP-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-1%ED%9A%8C-4%EB%B2%88-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9CJAVA
