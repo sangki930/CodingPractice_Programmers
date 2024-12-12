@@ -32,30 +32,26 @@ class Solution {
         long time = -1;
         int run = 0;
         while (true) {
-            // �������� �������� �� �� �����, ������ 0�̶�� ���� �� �Դϴ�.
+
             if (waitHeap.isEmpty() && sleepHeap.isEmpty() && run == 0) {
                 break;
             }
             time++;
-            // ���� �� �̶�� ����, �� 0�̶�� ���� �� �ƴ�.
+
             if (run > 0) {
                 run--;
             }
             
-            // ȣ��
-            // �ð��� ���ٸ�, ���� ������ ������ ��⿭�� �ֽ��ϴ�.
+
             while (!sleepHeap.isEmpty() && sleepHeap.peek()[1] == time) {
                 waitHeap.add(sleepHeap.poll());
             }
-            
-            // ����
+
             if (run == 0 && !waitHeap.isEmpty()) {
                 int[] curProgram = waitHeap.poll();
                 // ����ð��� �߰��մϴ�.
                 run += curProgram[2];
-                // ���信�� ����� �ð� - ��⿭�� �� �ð��� ��ϵ˴ϴ�.
-                // ������ ���� ���α׷� ���� ����Ǵ°� �ƴ϶� �켱���� ���� ��ϵȴٴ� �� �Դϴ�.
-                // ex) �켱������ 1�� ���α׷��� answer[1]�� �����.
+
                 answer[curProgram[0]] += time - curProgram[1];
             }
         }
@@ -63,4 +59,3 @@ class Solution {
         answer[0] = time;
     }
 }
-//��ó : https://velog.io/@soluinoon/PCCP-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-1%ED%9A%8C-4%EB%B2%88-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9CJAVA
