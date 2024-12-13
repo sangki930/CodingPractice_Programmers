@@ -55,7 +55,7 @@ class Solution {
                 answer[curProgram[0]] += time - curProgram[1];
             }
         }
-        // 0������ ���α׷��� �� �ð��� ���ϴ�.
+
         answer[0] = time;
     }
 }
