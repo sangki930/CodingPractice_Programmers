@@ -49,7 +49,6 @@ class Solution {
 
             if (run == 0 && !waitHeap.isEmpty()) {
                 int[] curProgram = waitHeap.poll();
-                // ����ð��� �߰��մϴ�.
                 run += curProgram[2];
 
                 answer[curProgram[0]] += time - curProgram[1];
