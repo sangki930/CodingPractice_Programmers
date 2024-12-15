@@ -13,7 +13,6 @@ class Solution {
             }
             return o1[0] - o2[0];
         });
-        
 
         PriorityQueue<int[]> sleepHeap = new PriorityQueue<>((o1, o2) -> {
             return o1[1] - o2[1];
