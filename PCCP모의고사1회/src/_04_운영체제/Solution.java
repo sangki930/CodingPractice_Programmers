@@ -31,7 +31,6 @@ class Solution {
         long time = -1;
         int run = 0;
         while (true) {
-
             if (waitHeap.isEmpty() && sleepHeap.isEmpty() && run == 0) {
                 break;
             }
