@@ -1,4 +1,4 @@
-package _01_½Ç½À¿ë_·Îº¿;
+package _01_ì‹¤ìŠµìš©_ë¡œë´‡;
 
 class Solution {
     public int[] solution(String command) {
@@ -27,16 +27,16 @@ class Solution {
     
     public int[] go(int dir, int[] point){
         switch(dir){
-            case 0->{ // ºÏÂÊ
+            case 0->{ // ï¿½ï¿½ï¿½ï¿½
                 point[1]++;
             }
-            case 1->{ // µ¿ÂÊ
+            case 1->{ // ï¿½ï¿½ï¿½ï¿½
                 point[0]++;
             }
-            case 2->{ // ³²ÂÊ
+            case 2->{ // ï¿½ï¿½ï¿½ï¿½
                 point[1]--;
             }
-            case 3->{ // ¼­ÂÊ
+            case 3->{ // ï¿½ï¿½ï¿½ï¿½
                 point[0]--;
             }
         }
@@ -45,16 +45,16 @@ class Solution {
     
     public int[] back(int dir, int[] point){
         switch(dir){
-            case 0->{ // ºÏÂÊ
+            case 0->{ // ï¿½ï¿½ï¿½ï¿½
                 point[1]--;
             }
-            case 1->{ // µ¿ÂÊ
+            case 1->{ // ï¿½ï¿½ï¿½ï¿½
                 point[0]--;
             }
-            case 2->{ // ³²ÂÊ
+            case 2->{ // ï¿½ï¿½ï¿½ï¿½
                 point[1]++;
             }
-            case 3->{ // ¼­ÂÊ
+            case 3->{ // ï¿½ï¿½ï¿½ï¿½
                 point[0]++;
             }
         }
