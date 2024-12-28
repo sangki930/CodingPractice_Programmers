@@ -1,4 +1,4 @@
-package _02_신입사원_교육
+package _02_신입사원_교육;
 
 import java.util.*;
 
