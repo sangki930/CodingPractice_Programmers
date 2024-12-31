@@ -27,10 +27,10 @@ class Solution {
     
     public int[] go(int dir, int[] point){
         switch(dir){
-            case 0->{ // ����
+            case 0->{ //
                 point[1]++;
             }
-            case 1->{ // ����
+            case 1->{ //
                 point[0]++;
             }
             case 2->{ // ����
