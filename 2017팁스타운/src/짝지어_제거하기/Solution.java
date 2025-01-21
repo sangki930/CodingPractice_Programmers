@@ -1,8 +1,7 @@
 package 짝지어_제거하기;
 
 import java.util.*;
-class Solution
-{
+class Solution {
     static String str;
     public int solution(String s)
     {
