@@ -3,8 +3,7 @@ package 짝지어_제거하기;
 import java.util.*;
 class Solution {
     static String str;
-    public int solution(String s)
-    {
+    public int solution(String s) {
         int answer = 0;
         
         str = new String(s);
