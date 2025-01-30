@@ -8,7 +8,6 @@ class Solution {
             long max = (long) Math.floor(Math.sqrt(1.0*r2*r2 - 1.0*i*i));
             answer += (max - min + 1);
         }
-
         return answer*4;
     }
 }
