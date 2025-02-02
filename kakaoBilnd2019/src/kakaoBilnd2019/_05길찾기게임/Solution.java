@@ -5,7 +5,6 @@ import java.util.*;
 class Solution {
     
     class Node{
-        
         Node(int id,int x,int y){
             this.x=x;
             this.id=id;
